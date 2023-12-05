@@ -4,11 +4,8 @@
         <meta charset="UTF-8">
         <title>Request Page for ID Replacement</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" type="text/css" href="styles2.css">
         <script src="script.js"></script>
     </head>
-    <h1>*Only one request is allowed until the transaction is completed</h1>
-    <hr>
     <body>
         <b><center style="font-size: 25px;">
             <h2 id="new-request" onclick="showForm()">Request Forms</h2>
@@ -27,26 +24,52 @@
     <div id="Req-ID-LSL" style="display: none;">
         <div class="container">
             <form name="IDReq" action="https://script.google.com/macros/s/AKfycbz_s7DvlKqqXH8FKsUG8OAfO3m3Ja_OPDjGhwKRbCSlUFEfkRvx4y02nhDnSScafX9e/exec" method="post" onsubmit=" return IDReq()">
-                <div id="Form1">
-                    <h3>Personal Information</h3>
-                    <input type="text" name="Last Name" placeholder="Last Name" required>
-                    <input type="text" name="First Name" placeholder="First Name" required>
-                    <input type="text" name="Middle Initial" placeholder="Middle Initial" required>
-                    <input type="text" name="Year" placeholder="Year(1st,2nd,3rd,4th)" required>
-                    <input type="text" name="Course" placeholder="Course (BSIT,BSA)" required>
-                    <input type="text" name="Department" placeholder="Department (CCIS)" required>
-                    <input type="text" name="Student Number" placeholder="Student Number" required>
-                    <input type="text" name="Email Address" placeholder="Email Address" required>
-                    <input type="text" name="Confirm Email Address" placeholder="Confirm Email Address" required>
-    
+                <h3>Personal Information</h3>
+                <div class="Form1">
+                    <div class="form-box">
+                        <input type="text" name="Last Name" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="text" name="First Name" placeholder="First Name" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="text" name="Middle Initial" placeholder="Middle Initial" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="text" name="Year" placeholder="Year(1st,2nd,3rd,4th)" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="text" name="Course" placeholder="Course (BSIT,BSA)" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="text" name="Department" placeholder="Department (CCIS)" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="text" name="Student Number" placeholder="Student Number" required>
+                    </div>
+                </div>
+                <div class="Form1">
+                    <div class="form-box">
+                        <input type="text" name="Email Address" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="text" name="Confirm Email Address" placeholder="Confirm Email Address" required>
+                    </div>
+                </div>
                     <h3>Date and Reason</h3>
-                    <input type="text" name="Date" placeholder="Date of ID lost (mm/dd/yyyy)" required>
-                    <input type="text" name="Reason" placeholder="Reason for requesting new ID" required>
+                <div class="Form1">
+                    <div class="form-box">
+                        <input type="text" name="Date" placeholder="Date of ID lost (mm/dd/yyyy)" required>
+                    </div>
+                    <div class="form-box">
+                        <input type="text" name="Reason" placeholder="Reason for requesting new ID" required>
+                    </div>
+                </div>
+                    
 
                     <div class="btn-box">
                         <button type="submit" id="Submit" name="submit" value="Request Now">Submit</button>
                     </div>
-                </div>
             </form>
         </div>
     </div>
