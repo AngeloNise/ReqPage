@@ -110,5 +110,3 @@ document.addEventListener("DOMContentLoaded", function() {
         progress2.style.width = "330px";
     };
 });
-
-
