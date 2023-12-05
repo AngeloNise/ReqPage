@@ -6,14 +6,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5); 
     background-blend-mode: multiply; 
 }
-hr {
-    border: 2px solid black;
-}
-h1 {
-    color: rgb(204, 111, 111);
-    font-size: 15px;
-    margin-left: 35px;
-}
+
 h2 {
     color: whitesmoke;
     display: inline;
@@ -22,8 +15,8 @@ h2 {
     margin-left: 10%;
 }
 .container {
-    width: 450px;
-    height: 800px;
+    max-width: 700px;
+    padding: 28px;
     margin: 8% auto;
     background: #fff;
     border-radius: 5px;
@@ -31,22 +24,28 @@ h2 {
     top: -50px;
     overflow: hidden;
 }
+.Form1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
 h3 {
     text-align: center;
-    margin-bottom: 10px;
-    color: #777;
 }
-.container form {
-    width: 250px;
-    position: absolute;
-    top: 40px;
-    left: 90px;
-    transition: 0.5s;
+.form-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 10px;
+}
+.form-box:nth-child(2n){
+    justify-content: end;
 }
 form input {
-    width: 100%;
-    padding: 10px 10px;
-    margin: 5px 0;
+    width: 80%;
+    padding: 6px 2px;
+    margin: 2px 0;
     border: 0;
     border-bottom: 1px solid #999;
     outline: none;
@@ -57,9 +56,8 @@ form input {
 }
 .btn-box{
     width: 100%;
-    margin: 40px auto;
+    margin: 10px auto;
     text-align: center;
-    margin-left: 4%;
 }
 .btn-box1{
     width: 100%;
@@ -95,15 +93,7 @@ form button{
     left: 6.5%;
     transition: 0.5s;
 }
-form input {
-    width: 100%;
-    padding: 10px 10px;
-    margin: 5px 0;
-    border: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
-}
+
 ::placeholder{
     color: #777;
 }
